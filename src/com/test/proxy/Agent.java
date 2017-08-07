@@ -16,7 +16,7 @@ public class Agent implements InvocationHandler{
 			throws Throwable {
 		//产生一个替身对象
 		Object obj = method.invoke(object, args);
-
+        System.out.println("哈哈，我回来啦");
 		return obj;
 	}
 
